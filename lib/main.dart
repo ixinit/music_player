@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:music_player/player.dart';
 import 'package:music_player/register.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:music_player/tracks.dart';
@@ -40,7 +39,7 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
